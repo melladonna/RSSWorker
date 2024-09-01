@@ -51,6 +51,7 @@ let deal = async (ctx) => {
 				description: `<img src ="${noteCard.cover.infoList.pop().url}"><br>${noteCard.displayTitle}`,
 				author: noteCard.user.nickname,
 				upvotes: noteCard.interactInfo.likedCount,
+				guid: noteCard.cover.infoList.pop().url.slice(-51),
 			}))
 		);
 	const renderCollect = (collect) => {
